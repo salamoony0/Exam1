@@ -380,8 +380,7 @@ color: white;
   -ms-transform: rotate(360deg);
   -o-transform: rotate(360deg);
 }
-
-
+ 
 .team-img img {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -414,7 +413,7 @@ background-color: white;
 border: 1px solid black;
 color: black;
 }
-
+/*  */
 .contact-card i {
   background-color: #F4F4F4;
   width: 55px;
