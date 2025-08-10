@@ -349,10 +349,6 @@ color: white;
     transition: all 0.3s ease-in-out;
     
 }
-
-
-
-
 .team-img {
   position: relative;
   overflow: hidden;   
@@ -533,8 +529,3 @@ html{
     max-width: 100%;
     height: auto;
 }
-
-
-
-
-
