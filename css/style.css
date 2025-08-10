@@ -507,10 +507,10 @@ html{
 }
 @media (max-width: 768px) {
     .fs-50 {
-        font-size: 35px !important; /* Reduced from 50px */
+        font-size: 35px !important; 
     }
     .fs-60 {
-        font-size: 40px !important; /* Reduced from 60px */
+        font-size: 40px !important; 
     }
 }
 
