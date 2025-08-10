@@ -58,14 +58,17 @@
 .txt-grey{
     color: #748192;
 }
-.big-progress {
+/* .big-progress {
   height: 22px;
-  width: 600px; /* or whatever size you want */
+  width: 600px; 
 }
 .big-progress .progress-bar {
  
   line-height: 30px; 
-}
+} */
+
+
+ 
 .txtt{
   font-size: 1rem;
   
@@ -198,10 +201,6 @@ color: white;
 .nav-tabs {
     border-bottom: none;
 }
-.nav-tabs .nav-link:hover {
-
-  
-}
 .img-layer{
   position: absolute;
   top: 0;
@@ -296,8 +295,6 @@ color: white;
 #clients img{
   width: 10%;
 }
-
-
 .carousel-indicators button {
   width: 12px !important;       
   height: 12px !important;
@@ -306,16 +303,10 @@ color: white;
   margin: 0 5px;                 
   border: none;                  
 }
-
-
-
 .carousel-indicators .active {
   opacity: 1 !important;
   background-color: grey !important;
 }
-/* .carousel-indicators {
-  bottom: -3.125rem; 
-} */
 #icons-content {
   background-color: white;
 }
@@ -347,52 +338,56 @@ color: white;
   overflow: hidden;
 }
 .team-img .imgg-layer {
-  position: absolute;
-  top: 28px;
-  right: 5px;
-  bottom: 24px;
-  left: 5px;
-  height: 67%;
-  background-color: rgba(255, 255, 255, 0.9);
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
- 
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    bottom: 0;
+    left: 1%;
+    height: 98%;
+    background-color: rgba(255, 255, 255, 0.9);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    
 }
-.team-img:hover .imgg-layer{
- opacity: 1;
 
+
+
+
+.team-img {
+  position: relative;
+  overflow: hidden;   
+  padding: 0 !important; 
 }
-.img-wrappp {
-  overflow: hidden;
- 
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -webkit-transform: translate(0,0);
-  -moz-transform: translate(0,0);
-  -ms-transform: translate(0,0);
-  -o-transform: translate(0,0);
+
+.team-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
 }
-.img-wrappp img {
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-}
-.team-img:hover .img-wrappp img {
+
+.team-img:hover img {
   transform: scale(1.1);
-  
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
+}
+
+
+
+.team-img:hover .imgg-layer{
+  opacity: 1;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+
+
+.team-img img {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
 }
 
 
@@ -414,12 +409,10 @@ color: white;
 .layerr-icons a i {
    padding: 10px;
 }
-
 .layerr-icons a:hover i {
 background-color: white;
 border: 1px solid black;
 color: black;
-
 }
 
 .contact-card i {
@@ -504,9 +497,45 @@ textarea:focus {
     left: 50%;
     transform: translateX(-50%);
 }
-
-
-html {
-    overflow-x: hidden;
+/* ---------------------------------- */
+*, *::before, *::after {
+    box-sizing: border-box;
 }
+
+html{
+    overflow-x: hidden;
+    max-width: 100%;
+}
+@media (max-width: 768px) {
+    .fs-50 {
+        font-size: 35px !important; /* Reduced from 50px */
+    }
+    .fs-60 {
+        font-size: 40px !important; /* Reduced from 60px */
+    }
+}
+
+@media (max-width: 576px) {
+    .fs-50 {
+        font-size: 28px !important;
+    }
+    .fs-60 {
+        font-size: 32px !important;
+    }
+}
+.progresss , .img-wrappp {
+    max-width: 100%;
+    overflow: hidden;
+}
+.progress {
+    max-width: 100%;
+}
+.img-wrappp img , img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
 
